@@ -1,0 +1,62 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Name of the app -->
+		<title>BITNAG WEB</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="/static/style.css">
+	</head>
+	<body class="container-fluid">
+
+		<div class="row">
+		
+			<!-- Camera -->
+			<main class="col" id="camera">
+			    
+			    <!-- Camera view -->
+			    <video id="camera--view" autoplay playsinline></video>		    		   
+			    <div></div>
+			    <!-- Camera trigger -->
+			    <button id="camera--trigger" class="button">Take a snapshot</button>
+
+			</main>	
+
+			<aside class="col" id="panel">
+				<h1>List of snapshots:</h1>
+				<!-- Camera sensor -->
+			    <canvas id="camera--sensor"></canvas>
+				<ul id="snap--list">
+					<li class="snap__item">
+						<!-- Camera output -->
+			   			<img src="//:0" alt="" class="shot" width="0px">
+					</li>
+				</ul>
+
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
+				  </div>
+				  <input type="text" id="firstName" class="form-control" aria-label="First Name" aria-describedby="inputGroup-sizing-default">
+				</div>
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
+				  </div>
+				  <input type="text" id="lastName" class="form-control" aria-label="Last Name" aria-describedby="inputGroup-sizing-default">
+				</div>
+				<button id="camera--trigger" class="button">Register</button>
+
+			</aside>
+
+		</div>		
+
+		<!-- Reference to JavaScript-->
+		<script src="/static/app.js"></script>
+	</body>
+</html>
