@@ -45,6 +45,8 @@ const url = '/register_user';
 
 let request = new Request(url)
 
+// curl -i -X POST -H "Content-Type: multipart/form-data" -F "image=image1.jpg" -F "image=image2.jpg" -F "image=image3.jpg" -F "user_id=123" -F "user_name=Artur Zahreba" http://0.0.0.0:8080/register_user
+
 fetch(request, {
         method: 'POST',
         headers: {
